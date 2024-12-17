@@ -34,16 +34,45 @@ padding-bottom: 20px;
     font-weight: bold;
     border-radius: 5px;
     padding-inline: 10px 20px;
+    
+}
 
+.todo-form:hover {
+    background-color: #005bb5;
 }
 
 .todo-button {
+    gap: 10px;
+
 }
 
 .todo-list {
     list-style: none;
+    color: #ffffff;
+    background-color: #d9534f;
+
+}
+.todo-list>li {
+    background-color: #f9f9f9;
     margin-bottom: 10px;
     display: flex;
-    
+    gap: 10px;
+    border-radius: 5px;
+    padding-inline: 10px;
+    padding-inline-start: 5px;
+    padding-inline-end: 10px;
 }
-.
+
+.todo-list>li:hover {
+background-color: #c9302c;
+
+}
+
+.todo-info {
+text-align: center;
+font-size: 0.9rem;
+color: #666666;
+margin-top: 20px;
+
+}
+
