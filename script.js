@@ -11,20 +11,17 @@ todoForm.addEventListener("submit", function (event) {
     const inputText = todoInput.value.trim();
     if(inputText === '') { 
         return;
-
-    } else if (inputText) {
-
-        const li = document.createElement("li");
-        li.textContent = inputText;
-        const deletebutton = document.createElement("button");
-        deletebutton.textContent = "löschen";
-        deletebutton.addEventListener("click", () => {
-        list.removeChild(li);
+    } 
+    const li = document.createElement("li");
+    li.textContent = inputText;
+    const deletebutton = document.createElement("button");
+    deletebutton.textContent = "löschen";
+    deletebutton.addEventListener("click", () => {
+    todoList.removeChild(li);
         })
 
     li.appendChild(deletebutton)
-    list.appendChild(li);
+    todoList.appendChild(li);
     input.value = "";
-}
+})
 
-const todos = []
